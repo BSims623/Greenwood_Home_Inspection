@@ -4,13 +4,14 @@ import { Link } from 'react-router-dom'
 import { Testimonials } from '../components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSquareCheck } from '@fortawesome/free-regular-svg-icons'
+import landingImg from '../assets/images/landing.jpg'
 
 
 const Landing = () => {
     return (
         <Wrapper>
             <div className="img-container">
-                <img src='src/assets/images/landing.jpg' />
+                <img src={landingImg} alt='Landing image of new home.' />
             </div>
             <section className="about-section container-lg py-5 d-flex flex-column align-items-center">
                 <h1 className='display-5 fw-bold lh-1'>Welcome To Greenwood Home Inspection</h1>
