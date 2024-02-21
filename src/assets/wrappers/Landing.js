@@ -7,7 +7,7 @@ img {
 .about-section {
     max-width: 970px;
 }
-.services-section, .testimonials-section {
+.services-section, .contact-section {
     background: #023020;
     color: white;
 }

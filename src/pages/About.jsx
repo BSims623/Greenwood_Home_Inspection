@@ -10,7 +10,7 @@ const About = () => {
                 {/* <p>Greetings,</p> */}
                 <p className=''>I am Martin Greenwood; I am the owner of Greenwood Home Inspection.</p>
                 <p>I am a home inspector, certified by the California Real Estate Inspection
-                    Association (creia.org). I was certified by CREIA in 2002, completing the education
+                    Association (<a href="https://www.creia.org/">creia.org</a>). I was certified by CREIA in 2002, completing the education
                     and experience required to become certified by CREIA. Requirements for and
                     maintenance of CREIA certifications are the most stringent of most inspection
                     associations.</p>

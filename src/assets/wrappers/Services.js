@@ -6,7 +6,7 @@ h2 {
     border-bottom: 5px solid;
 }
 .description {
-    text-indent: 40px;
+    /* text-indent: 40px; */
 }
 `;
 

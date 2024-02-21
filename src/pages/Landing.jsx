@@ -12,12 +12,14 @@ const Landing = () => {
             <div className="img-container">
                 <img src='src/assets/images/landing.jpg' />
             </div>
-            <section className="about-section container-lg py-3 d-flex flex-column align-items-center">
+            <section className="about-section container-lg py-5 d-flex flex-column align-items-center">
                 <h1 className='display-5 fw-bold lh-1'>Welcome To Greenwood Home Inspection</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A minus id at distinctio voluptas. Voluptatem assumenda voluptas officia fuga facilis eos odio numquam incidunt. Pariatur ipsum laboriosam veritatis! Deleniti, ipsam!
-                    Inventore rem veritatis architecto iusto odit soluta sed doloribus officiis similique illum non aperiam, nemo ratione cupiditate dolore dolores. Fugiat necessitatibus, doloremque in cupiditate deleniti eum quo aliquid consequatur quisquam?
-                    Quisquam error nisi porro iure incidunt labore enim officiis? Aliquid quis natus vitae at similique tempore quaerat hic accusamus reprehenderit, ullam maiores incidunt mollitia. Quas sint amet quaerat commodi blanditiis!</p>
-                <Link className='btn btn-green text-light' to='/about'>Learn More</Link>
+                <p className='mt-3'>I am a home inspector, certified by the California Real Estate Inspection
+                    Association (<a href="https://www.creia.org/">creia.org</a>). I was certified by CREIA in 2002, completing the education
+                    and experience required to become certified by CREIA. Requirements for and
+                    maintenance of CREIA certifications are the most stringent of most inspection
+                    associations. I work with both homeowners and real estate agents in Nevada, Placer, and Sacramento Counties.</p>
+                <Link className='btn btn-green text-light mt-5' to='/about'>Learn More</Link>
             </section>
             <section className="services-section py-5 d-flex flex-column align-items-center text-light">
                 <h1 className='display-5 fw-bold lh-1 text-center'>Inspection Services</h1>
@@ -44,23 +46,22 @@ const Landing = () => {
                 </div>
                 <Link className='btn btn-dark' to='/services'>Learn More</Link>
             </section>
-            <section className='logo-section mx-auto'>
+            <section className='logo-section mx-auto py-5'>
                 <a href="https://www.creia.org/">
-                    {/* <img src="https://www.creia.org/assets/site/logo.png" alt="creia logo" /> */}
                     <img src="src/assets/images/CREIA Logo.webp" alt="creia logo" />
                 </a>
             </section>
-            <section className='testimonials-section'>
+            {/* <section className='testimonials-section'>
                 <Testimonials />
-            </section>
-            <section className="contact-section py-3 d-flex flex-column align-items-center">
+            </section> */}
+            <section className="contact-section py-5 d-flex flex-column align-items-center">
                 <h1 className='display-5 fw-bold lh-1 text-center'>Schedule an Inspection</h1>
                 <div className='my-3'>
                     <p className='m-0'>Phone: <a href='tel:7073228350'>707-322-8350</a></p>
                     <p className='m-0'>Email: <a href='mailto:greenwoodhomeinspections@gmail.com'>greenwoodinspec@aol.com</a></p>
                     <p className='m-0'>Hours: M-F 9am to 5pm</p>
                 </div>
-                <Link className='btn btn-green text-light' to='/contact'>Contact</Link>
+                <Link className='btn btn-dark' to='/contact'>Contact</Link>
             </section>
         </Wrapper>
     )
