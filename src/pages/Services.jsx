@@ -2,7 +2,7 @@ import React from 'react'
 import Wrapper from '../assets/wrappers/Services'
 import { servicesList } from '../utils/servicesList'
 import Service from '../components/Service'
-import creiaLogo from '../assets/images/creia-logo.webp'
+import creiaLogo from '../assets/images/creia-logo.jpg'
 import { Link } from 'react-router-dom'
 
 const Services = () => {

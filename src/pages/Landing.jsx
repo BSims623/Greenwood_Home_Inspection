@@ -5,7 +5,7 @@ import { Testimonials } from '../components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSquareCheck } from '@fortawesome/free-regular-svg-icons'
 import landingImg from '../assets/images/landing.jpg'
-import creiaLogo from '../assets/images/creia-logo.webp'
+import creiaLogo from '../assets/images/creia-logo.jpg'
 
 
 const Landing = () => {

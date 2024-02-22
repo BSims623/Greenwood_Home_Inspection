@@ -1,7 +1,7 @@
 import React from 'react'
 import Wrapper from '../assets/wrappers/Contact'
 import profileImg from '../assets/images/profile-img.jpeg'
-import creiaLogo from '../assets/images/creia-logo.webp'
+import creiaLogo from '../assets/images/creia-logo.jpg'
 
 const Contact = () => {
     return (
