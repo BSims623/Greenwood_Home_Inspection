@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.section`
-/* min-height: 600px; */
-background: #023020;
+background: var(--primary-green);
 max-width: 900px;
 color: #f8f9fa;
 .content-container {

@@ -5,9 +5,8 @@ body {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    /* overflow-x: hidden; */
+    font-family: 'Times New Roman', Times, serif;
     overscroll-behavior: none;
-    /* background-color: aqua; */
 }
 
 :root {

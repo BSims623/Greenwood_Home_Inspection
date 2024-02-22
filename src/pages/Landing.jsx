@@ -1,8 +1,8 @@
 import React from 'react'
 import Wrapper from '../assets/wrappers/Landing'
 import { Link } from 'react-router-dom'
-import landingImg from '../assets/images/landing.jpg'
-import creiaLogo from '../assets/images/creia-logo.jpg'
+import landingImg from '../assets/images/landing-3.webp'
+import creiaLogo from '../assets/images/creia-logo.webp'
 import { ImagePreloader } from '../components'
 
 
