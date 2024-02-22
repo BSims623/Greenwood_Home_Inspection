@@ -21,7 +21,7 @@ const Landing = () => {
                     and experience required to become certified by CREIA. Requirements for and
                     maintenance of CREIA certifications are the most stringent of most inspection
                     associations. I work with both homeowners and real estate agents in Nevada, Placer, and Sacramento Counties.</p>
-                <Link className='btn btn-green text-light mt-5' to='/about'>Learn More</Link>
+                <Link to='/about'><button className='btn btn-green text-light mt-5'>Learn More</button></Link>
             </section>
             <section className="services-section py-5 d-flex flex-column align-items-center text-light">
                 <h1 className='display-5 fw-bold lh-1 text-center'>Inspection Services</h1>
@@ -46,7 +46,7 @@ const Landing = () => {
                         </ul>
                     </div>
                 </div>
-                <Link to='/services'><button className='btn btn-dark'>Learn More</button></Link>
+                <Link to='/services'><button className='btn btn-light'>Learn More</button></Link>
             </section>
             <section className='logo-section mx-auto py-5'>
                 <a href="https://www.creia.org/">
@@ -63,7 +63,7 @@ const Landing = () => {
                     <p className='m-0'>Email: <a href='mailto:greenwoodhomeinspections@gmail.com'>greenwoodinspec@aol.com</a></p>
                     <p className='m-0'>Hours: M-F 9am to 5pm</p>
                 </div>
-                <Link to='/contact'><button className='btn btn-dark'>Contact</button></Link>
+                <Link to='/contact'><button className='btn btn-light'>Contact</button></Link>
             </section>
         </Wrapper>
     )

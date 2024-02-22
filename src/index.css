@@ -15,10 +15,10 @@ body {
 }
 
 .btn-green {
-    background: #023020;
+    background: var(--primary-green);
 }
 
 .btn-green:hover {
     opacity: .75;
-    background: #023020;
+    background: var(--primary-green);
 }
