@@ -4,7 +4,6 @@ import { useLocation } from 'react-router-dom'
 const Navbar = () => {
     const location = useLocation().pathname
 
-
     return (
         <>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Tenth navbar example">
