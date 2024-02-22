@@ -5,6 +5,7 @@ import { Testimonials } from '../components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSquareCheck } from '@fortawesome/free-regular-svg-icons'
 import landingImg from '../assets/images/landing.jpg'
+import creiaLogo from '../assets/images/creia-logo.webp'
 
 
 const Landing = () => {
@@ -49,7 +50,7 @@ const Landing = () => {
             </section>
             <section className='logo-section mx-auto py-5'>
                 <a href="https://www.creia.org/">
-                    <img src="src/assets/images/CREIA Logo.webp" alt="creia logo" />
+                    <img src={creiaLogo} alt="creia logo" />
                 </a>
             </section>
             {/* <section className='testimonials-section'>

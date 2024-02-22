@@ -1,5 +1,6 @@
 import React from 'react'
 import Wrapper from '../assets/wrappers/Contact'
+import profileImg from '../assets/images/profile-img.jpeg'
 
 const Contact = () => {
     return (
@@ -14,7 +15,7 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className="img-container my-5 col-12 col-sm-4 mx-auto">
-                    <img className='rounded' src="src/assets/images/profile-img.jpeg" alt="Marty Greenwood profile picture." />
+                    <img className='rounded' src={profileImg} alt="Marty Greenwood profile picture." />
                 </div>
             </div>
         </Wrapper>
