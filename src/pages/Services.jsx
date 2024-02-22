@@ -12,7 +12,7 @@ const Services = () => {
         <Wrapper className='container d-flex flex-column align-items-center'>
             <h1 className="text-center mt-3 display-3 fw-bold">Inspection Services</h1>
             <section className='logo-section mx-auto'>
-                <a href={creiaLogo}><img className='w-100' src="https://www.creia.org/assets/site/logo.png" alt="creia logo" /></a>
+                <a href="https://www.creia.org/"><img className='w-100' src={creiaLogo} alt="creia logo" /></a>
             </section>
             <div className="col-lg-8">
                 <h5 className='description'>I am a CREIA Certified Home Inspector working with both homeowners and real estate agents in Nevada, Placer and Sacramento counties. Every inspection is held to the standards of the CREIA contract, click <a href="src/assets/pdf/CreiaContractAndSOP10.2018.pdf">here</a> to view the full contract.</h5>

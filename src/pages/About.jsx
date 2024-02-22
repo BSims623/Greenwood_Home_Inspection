@@ -7,7 +7,7 @@ const About = () => {
         <Wrapper className='container'>
             <section className="about-section py-5 mx-auto col-md-6">
                 <img className='rounded mx-auto d-block' src={profileImg} alt="Profile picture of Marty Greenwood." width='200' />
-                <h1 className="text-center my-3">Marty Greenwood</h1>
+                <h1 className="text-center my-3">Martin Greenwood</h1>
                 <p className=''>I am Martin Greenwood; I am the owner of Greenwood Home Inspection.</p>
                 <p>I am a home inspector, certified by the California Real Estate Inspection
                     Association (<a href="https://www.creia.org/">creia.org</a>). I was certified by CREIA in 2002, completing the education
