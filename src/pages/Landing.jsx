@@ -1,18 +1,19 @@
 import React from 'react'
 import Wrapper from '../assets/wrappers/Landing'
 import { Link } from 'react-router-dom'
-import { Testimonials } from '../components'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSquareCheck } from '@fortawesome/free-regular-svg-icons'
 import landingImg from '../assets/images/landing.jpg'
 import creiaLogo from '../assets/images/creia-logo.jpg'
+import { ImagePreloader } from '../components'
 
 
 const Landing = () => {
+
+
     return (
         <Wrapper>
             <div className="img-container">
-                <img src={landingImg} alt='Landing image of new home.' />
+                <ImagePreloader src={landingImg} />
+                {/* <img className='landing-img' src={landingImg} alt='Landing image of new home.' /> */}
             </div>
             <section className="about-section container-lg py-5 d-flex flex-column align-items-center">
                 <h1 className='display-5 fw-bold lh-1'>Welcome To Greenwood Home Inspection</h1>
@@ -28,34 +29,31 @@ const Landing = () => {
                 <div className="d-md-flex my-5">
                     <div className="services-container mx-5">
                         <ul className='mx-auto mb-0 fa-ul'>
-                            <li><i class="fa-li fa fa-check-square"></i>Residential</li>
-                            <li><i class="fa-li fa fa-check-square"></i>Pre-Listing</li>
-                            <li><i class="fa-li fa fa-check-square"></i>Foundation, Basement, and Subfloor</li>
-                            <li><i class="fa-li fa fa-check-square"></i>Exterior</li>
-                            <li><i class="fa-li fa fa-check-square"></i>Roof Covering</li>
-                            <li><i class="fa-li fa fa-check-square"></i>Attic Areas and Roof Framing</li>
+                            <li><i className="fa-li fa fa-check-square"></i>Residential</li>
+                            <li><i className="fa-li fa fa-check-square"></i>Pre-Listing</li>
+                            <li><i className="fa-li fa fa-check-square"></i>Foundation, Basement, and Subfloor</li>
+                            <li><i className="fa-li fa fa-check-square"></i>Exterior</li>
+                            <li><i className="fa-li fa fa-check-square"></i>Roof Covering</li>
+                            <li><i className="fa-li fa fa-check-square"></i>Attic Areas and Roof Framing</li>
                         </ul>
                     </div>
                     <div className="services-container mx-5">
                         <ul className='mx-auto mt-0 fa-ul'>
-                            <li><i class="fa-li fa fa-check-square"></i>Plumbing</li>
-                            <li><i class="fa-li fa fa-check-square"></i>Electrical</li>
-                            <li><i class="fa-li fa fa-check-square"></i>Heating and Cooling</li>
-                            <li><i class="fa-li fa fa-check-square"></i>Fireplaces and Chimneys</li>
-                            <li><i class="fa-li fa fa-check-square"></i>Building Interior</li>
+                            <li><i className="fa-li fa fa-check-square"></i>Plumbing</li>
+                            <li><i className="fa-li fa fa-check-square"></i>Electrical</li>
+                            <li><i className="fa-li fa fa-check-square"></i>Heating and Cooling</li>
+                            <li><i className="fa-li fa fa-check-square"></i>Fireplaces and Chimneys</li>
+                            <li><i className="fa-li fa fa-check-square"></i>Building Interior</li>
                         </ul>
                     </div>
                 </div>
                 <Link to='/services'><button className='btn btn-light'>Learn More</button></Link>
             </section>
-            <section className='logo-section mx-auto py-5'>
+            <section className='logo-section d-flex justify-content-center mx-auto py-5'>
                 <a href="https://www.creia.org/">
                     <img src={creiaLogo} alt="creia logo" />
                 </a>
             </section>
-            {/* <section className='testimonials-section'>
-                <Testimonials />
-            </section> */}
             <section className="contact-section py-5 d-flex flex-column align-items-center">
                 <h1 className='display-5 fw-bold lh-1 text-center'>Schedule an Inspection</h1>
                 <div className='my-3'>

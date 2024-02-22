@@ -1,16 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { useLocation } from 'react-router-dom'
 
 const Navbar = () => {
     const location = useLocation().pathname
-    const [currentPage, setCurrentPage] = useState(location)
-
-    console.log(location);
-
-    const handleCurrentPage = (page, e) => {
-        console.log(e);
-        setCurrentPage(page)
-    }
 
 
     return (
