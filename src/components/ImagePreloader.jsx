@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const PreloadImage = ({ src, alt }) => {
+const PreloadImage = ({ src, alt, className }) => {
     const [loaded, setLoaded] = useState(false);
 
     useEffect(() => {
@@ -15,7 +15,7 @@ const PreloadImage = ({ src, alt }) => {
         };
     }, [src]);
 
-    return <>{loaded ? <img className='w-100' src={src} alt={alt} /> : null}</>;
+    return <>{loaded ? <img className={className} src={src} alt={alt} /> : null}</>;
 };
 
 export default PreloadImage;

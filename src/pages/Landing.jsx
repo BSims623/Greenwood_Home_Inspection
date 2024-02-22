@@ -12,8 +12,7 @@ const Landing = () => {
     return (
         <Wrapper>
             <div className="img-container">
-                <ImagePreloader src={landingImg} alt="Landing image of new home." />
-                {/* <img className='landing-img' src={landingImg} alt='Landing image of new home.' /> */}
+                <ImagePreloader src={landingImg} alt="Landing image of new home." className="landing-img" />
             </div>
             <section className="about-section container-lg py-5 d-flex flex-column align-items-center">
                 <h1 className='display-5 fw-bold lh-1'>Welcome To Greenwood Home Inspection</h1>
