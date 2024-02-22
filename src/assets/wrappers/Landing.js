@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
 
 .landing-img {
-    max-width: 100%;
+    width: 100%;
 } 
 .about-section {
     max-width: 970px;

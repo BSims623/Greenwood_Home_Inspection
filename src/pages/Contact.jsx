@@ -1,7 +1,8 @@
 import React from 'react'
 import Wrapper from '../assets/wrappers/Contact'
 import profileImg from '../assets/images/profile-img.jpeg'
-import creiaLogo from '../assets/images/creia-logo.webp'
+import creiaLogoWebp from '../assets/images/creia-logo.webp'
+import creiaLogoJpg from '../assets/images/creia-logo.jpg'
 
 const Contact = () => {
     return (
@@ -20,7 +21,11 @@ const Contact = () => {
                     <img className='rounded' src={profileImg} alt="Marty Greenwood profile picture." />
                 </div>
             </div>
-            <a href="https://www.creia.org/"><img className='creia-logo' src={creiaLogo} alt="CREIA Logo" /></a>
+            <a href="https://www.creia.org/"><picture>
+                <source srcset={creiaLogoWebp} media="(max-width: 100%)" type="image/webp" />
+                <img className='w-100' style={{ maxWidth: '100%' }} src={creiaLogoJpg} alt="Landing image of a new home." />
+            </picture>
+            </a>
         </Wrapper>
     )
 }
