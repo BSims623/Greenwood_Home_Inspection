@@ -46,7 +46,7 @@ const Landing = () => {
                         </ul>
                     </div>
                 </div>
-                <Link className='btn btn-dark' to='/services'>Learn More</Link>
+                <Link to='/services'><button className='btn btn-dark'>Learn More</button></Link>
             </section>
             <section className='logo-section mx-auto py-5'>
                 <a href="https://www.creia.org/">
