@@ -63,7 +63,7 @@ const Landing = () => {
                     <p className='m-0'>Email: <a href='mailto:greenwoodhomeinspections@gmail.com'>greenwoodinspec@aol.com</a></p>
                     <p className='m-0'>Hours: M-F 9am to 5pm</p>
                 </div>
-                <Link className='btn btn-dark' to='/contact'>Contact</Link>
+                <Link to='/contact'><button className='btn btn-dark'>Contact</button></Link>
             </section>
         </Wrapper>
     )
