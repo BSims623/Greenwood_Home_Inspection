@@ -1,11 +1,10 @@
 import React from 'react'
-import Wrapper from '../assets/wrappers/About'
 import profileImg from '../assets/images/profile-img.jpeg'
 import { ScrollToTop } from '../components'
 
 const About = () => {
     return (
-        <Wrapper className='container'>
+        <div className='container'>
             <ScrollToTop />
             <section className="about-section py-5 mx-auto col-md-6">
                 <img className='rounded mx-auto d-block' src={profileImg} alt="Profile picture of Marty Greenwood." width='200' />
@@ -25,7 +24,7 @@ const About = () => {
                 <p>I have been a home inspector for the past 20 years, in the San Francisco Bay Area,
                     Nevada, Placer, and Sacramento counties.</p>
             </section>
-        </Wrapper>
+        </div>
     )
 }
 

@@ -1,5 +1,4 @@
 import React from 'react'
-import Wrapper from '../assets/wrappers/Landing'
 import { Link } from 'react-router-dom'
 import landingImgWebp from '../assets/images/landing-3.webp'
 import landingImgJpg from '../assets/images/landing-img-new.jpg'
@@ -11,7 +10,7 @@ const Landing = () => {
 
 
     return (
-        <Wrapper>
+        <div>
             <div className="img-container w-100">
                 <picture>
                     <source srcSet={landingImgWebp} media="(width: 100%)" type="image/webp" />
@@ -28,7 +27,7 @@ const Landing = () => {
                     associations. I work with both homeowners and real estate agents in Nevada, Placer, and Sacramento Counties.</p>
                 <Link to='/about'><button className='btn btn-green text-light mt-5'>Learn More</button></Link>
             </section>
-            <section className="services-section py-5 d-flex flex-column align-items-center text-light">
+            <section className="services-section py-5 d-flex flex-column align-items-center text-light" style={{ background: 'var(--primary-green)' }}>
                 <h1 className='display-5 fw-bold lh-1 text-center'>Inspection Services</h1>
                 <div className="d-md-flex my-5">
                     <div className="services-container mx-5">
@@ -53,7 +52,7 @@ const Landing = () => {
                 </div>
                 <Link to='/services#inspection-services-heading'><button className='btn btn-light'>Learn More</button></Link>
             </section>
-            <section className='logo-section d-flex justify-content-center mx-auto py-5'>
+            <section className='logo-section d-flex justify-content-center mx-auto py-5' style={{ maxWidth: '700px' }}>
                 <a href="https://www.creia.org/">
                     <picture>
                         <source srcSet={creiaLogoWebp} media="(max-width: 100%)" type="image/webp" />
@@ -61,7 +60,7 @@ const Landing = () => {
                     </picture>
                 </a>
             </section>
-            <section className="contact-section py-5 d-flex flex-column align-items-center">
+            <section className="contact-section py-5 d-flex flex-column align-items-center text-light" style={{ background: 'var(--primary-green)' }}>
                 <h1 className='display-5 fw-bold lh-1 text-center'>Schedule an Inspection</h1>
                 <div className='my-3'>
                     <p className='m-0'>Phone: <a href='tel:7073228350'>707-322-8350</a></p>
@@ -70,7 +69,7 @@ const Landing = () => {
                 </div>
                 <Link to='/contact'><button className='btn btn-light'>Contact</button></Link>
             </section>
-        </Wrapper>
+        </div>
     )
 }
 
