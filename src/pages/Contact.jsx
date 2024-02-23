@@ -3,10 +3,12 @@ import Wrapper from '../assets/wrappers/Contact'
 import profileImg from '../assets/images/profile-img.jpeg'
 import creiaLogoWebp from '../assets/images/creia-logo.webp'
 import creiaLogoJpg from '../assets/images/creia-logo.jpg'
+import { ScrollToTop } from '../components'
 
 const Contact = () => {
     return (
         <Wrapper className='d-flex flex-column align-items-center'>
+            <ScrollToTop />
             <div className='contact-section row mx-auto px-5 mt-5'>
                 <div className="contact-container col-12 col-sm-8 d-flex flex-column justify-content-center">
                     <h2 className='fw-bold'>Martin Greenwood</h2>
