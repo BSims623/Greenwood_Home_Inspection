@@ -5,7 +5,6 @@ import landingImgWebp from '../assets/images/landing-3.webp'
 import landingImgJpg from '../assets/images/landing-img-new.jpg'
 import creiaLogoWebp from '../assets/images/creia-logo.webp'
 import creiaLogoJpg from '../assets/images/creia-logo.jpg'
-import { ImagePreloader } from '../components'
 
 
 const Landing = () => {
@@ -15,11 +14,10 @@ const Landing = () => {
         <Wrapper>
             <div className="img-container w-100">
                 <picture>
-                    <source srcset={landingImgWebp} media="(width: 100%)" type="image/webp" />
-                    <source srcset={landingImgJpg} media="(width: 100%)" type="image/jpg" />
+                    <source srcSet={landingImgWebp} media="(width: 100%)" type="image/webp" />
+                    <source srcSet={landingImgJpg} media="(width: 100%)" type="image/jpg" />
                     <img className='w-100' src={landingImgJpg} alt="Landing image of a new home." />
                 </picture>
-                {/* <ImagePreloader src={landingImg} alt="Landing image of new home." className="landing-img" /> */}
             </div>
             <section className="about-section container-lg py-5 d-flex flex-column align-items-center">
                 <h1 className='display-5 fw-bold lh-1'>Welcome To Greenwood Home Inspection</h1>
@@ -53,16 +51,14 @@ const Landing = () => {
                         </ul>
                     </div>
                 </div>
-                <Link to='/services'><button className='btn btn-light'>Learn More</button></Link>
+                <Link to='/services#inspection-services-heading'><button className='btn btn-light'>Learn More</button></Link>
             </section>
             <section className='logo-section d-flex justify-content-center mx-auto py-5'>
                 <a href="https://www.creia.org/">
                     <picture>
-                        <source srcset={creiaLogoWebp} media="(max-width: 100%)" type="image/webp" />
-                        {/* <source srcset={creiaLogoWebp} media="(max-width: 100%)" type="image/jpg" /> */}
+                        <source srcSet={creiaLogoWebp} media="(max-width: 100%)" type="image/webp" />
                         <img className='w-100' style={{ maxWidth: '100%' }} src={creiaLogoJpg} alt="Landing image of a new home." />
                     </picture>
-                    {/* <img src={creiaLogo} alt="creia logo" /> */}
                 </a>
             </section>
             <section className="contact-section py-5 d-flex flex-column align-items-center">

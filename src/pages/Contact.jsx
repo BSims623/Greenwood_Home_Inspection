@@ -22,7 +22,7 @@ const Contact = () => {
                 </div>
             </div>
             <a href="https://www.creia.org/"><picture>
-                <source srcset={creiaLogoWebp} media="(max-width: 100%)" type="image/webp" />
+                <source srcSet={creiaLogoWebp} media="(max-width: 100%)" type="image/webp" />
                 <img className='w-100' style={{ maxWidth: '100%' }} src={creiaLogoJpg} alt="Landing image of a new home." />
             </picture>
             </a>

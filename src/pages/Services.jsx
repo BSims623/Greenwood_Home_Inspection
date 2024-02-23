@@ -1,7 +1,7 @@
 import React from 'react'
 import Wrapper from '../assets/wrappers/Services'
 import { servicesList } from '../utils/servicesList'
-import Service from '../components/Service'
+import { Service, ScrollToTop } from '../components'
 import creiaLogoWebp from '../assets/images/creia-logo.webp'
 import creiaLogoJpg from '../assets/images/creia-logo.jpg'
 import { Link } from 'react-router-dom'
@@ -10,11 +10,12 @@ const Services = () => {
 
     return (
         <Wrapper className='container d-flex flex-column align-items-center'>
-            <h1 className="text-center mt-3 display-3 fw-bold">Inspection Services</h1>
+            <ScrollToTop />
+            <h1 className="text-center mt-3 display-3 fw-bold" id='inspection-services-heading'>Inspection Services</h1>
             <section className='logo-section mx-auto'>
                 <a href="https://www.creia.org/"><picture>
-                    <source srcset={creiaLogoWebp} media="(max-width: 100%)" type="image/webp" />
-                    <img className='w-100' style={{ maxWidth: '100%' }} src={creiaLogoJpg} alt="Landing image of a new home." />
+                    <source srcSet={creiaLogoWebp} media="(max-width: 100%)" type="image/webp" />
+                    <img className='w-100' style={{ maxWidth: '100%' }} src={creiaLogoJpg} alt="CREIA Logo image" />
                 </picture>
                 </a>
             </section>

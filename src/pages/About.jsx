@@ -1,10 +1,12 @@
 import React from 'react'
 import Wrapper from '../assets/wrappers/About'
 import profileImg from '../assets/images/profile-img.jpeg'
+import { ScrollToTop } from '../components'
 
 const About = () => {
     return (
         <Wrapper className='container'>
+            <ScrollToTop />
             <section className="about-section py-5 mx-auto col-md-6">
                 <img className='rounded mx-auto d-block' src={profileImg} alt="Profile picture of Marty Greenwood." width='200' />
                 <h1 className="text-center my-3">Martin Greenwood</h1>
