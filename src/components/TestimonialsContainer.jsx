@@ -33,7 +33,7 @@ const TestimonialsContainer = () => {
 
 
     return (
-        <Wrapper className='container-fluid px-0 py-5 d-flex flex-column align-items-center justify-content-between'>
+        <Wrapper className='container-fluid px-0 py-5 d-flex flex-column align-items-center justify-content-between rounded'>
             <h1 className='display-5 fw-bold lh-1 mb-3 text-center'>Testimonials</h1>
             <div className="container-fluid px-0 w-100 d-flex h-100">
                 <div className="container icon-container d-flex align-items-center">
