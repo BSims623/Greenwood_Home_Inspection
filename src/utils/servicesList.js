@@ -1,11 +1,4 @@
 export const servicesList = [
-    // {
-    //     service: "Residential",
-    // },
-    // {
-    //     service: "Pre-listing",
-    //     included: ['Looking to sell a home? I work with sellers and agents to get homes ready for the market.']
-    // },
     {
         service: "Foundation, Basement, and Subfloor",
         included: ['Foundation system', 'Floor framing system,', 'Under-floor ventilation,', 'Foundation anchoring and cripple wall bracing', 'Wood separation from soil', 'Insulation']

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.section`
-/* background: var(--primary-green);
+background: var(--primary-green);
 max-width: 900px;
 color: #f8f9fa;
 .content-container {
@@ -17,13 +17,13 @@ color: #f8f9fa;
     font-size: 3.5rem;
     cursor: pointer;
 }
-.circle {
+.fa-circle {
     font-size: 1.rem;
 }
-.circle:hover {
+.fa-circle:hover {
     //font-size: 2rem;
     cursor: pointer;
-} */
+}
 `;
 
 export default Wrapper

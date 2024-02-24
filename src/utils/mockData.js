@@ -1,39 +1,12 @@
 export const data = [
     {
-        "name": "Caroline",
-        "location": "Sacramento, CA",
+        "name": "Ron R.",
+        "review": ["Punctual, professional, very thorough, produced 50 page report that was easy to read and understand including photos covering everything from climbing on the roof to crawling the subfloor. Includes a simple 3 page executive summary as well as 47 pages of detail delivered on time and as promised. Probably the best home inspection I've had over 30 years of buying and selling 10 homes."]
+    },
+    {
+        "name": "Becky G.",
         "review": [
-            "Marty is awesome."
+            "Martin is phenomenal. He is the most approachable, thorough, direct/honest home inspector I have worked with (I have worked with 4 different inspectors over the past 5 years - different houses). In addition to walking me through the entire house, showing me everything in the house and discussing things that could become issues down the line, he was available to answer questions I had after I looked at the report. He was available via phone and email to help me figure out if something on the report was minor or a major issue that needed to be repaired asap. He also sent me articles when I asked about certain things so I had more info. He produced a very clear and easy to understand report that noted current conditions (informational/functional notes), conditions needing service (i.e., should do this now), and recommended service or upgrade. The report had a nice summary at the end as well. Compared to some of the other home inspector reports, his was very clear and easy to follow. I had him inspect two different houses in Napa. The first had lots of problems in almost every system - would have cost at least $40,000 in repairs (that he could see... who knows what else might have been found later). The second house, which ironically was the same builder and layout just down the street, was in much better shape. He still found issues with it, but far less, and I am forever grateful that he was there to help guide me through the process and understand what I might be getting into potentially. In the end, what mattered most to me is that I really felt like I could trust him to give me sound information. He's on your side when he does the inspection and really wants to make sure you understand the current condition of the house and what might cost you down the line. Simply put, I would definitely use him again and highly recommend him."
         ]
-    },
-    {
-        "name": "Jane",
-        "location": "Lake Wildwood, CA",
-        "review": ["Look no where else!"]
-    },
-    {
-        "name": "Nick",
-        "location": "Roseville, CA",
-        "review": ["Knowledgable and professional."]
-    },
-    {
-        "name": "E",
-        "location": "Rocklin, CA",
-        "review": ["Great Service!"]
-    },
-    {
-        "name": "Brian",
-        "location": "Orangevale, CA",
-        "review": ["5 stars!"]
-    },
-    {
-        "name": "Kristin L",
-        "location": "Placerville, CA",
-        "review": ["Marty is great!"]
-    },
-    {
-        "name": "Cecilia",
-        "location": "Tahoe, CA",
-        "review": ["5 stars!"]
     }
 ]

@@ -4,6 +4,7 @@ import landingImgWebp from '../assets/images/landing-3.webp'
 import landingImgJpg from '../assets/images/landing-img-new.jpg'
 import creiaLogoWebp from '../assets/images/creia-logo.webp'
 import creiaLogoJpg from '../assets/images/creia-logo.jpg'
+import { Testimonials } from '../components'
 
 
 const Landing = () => {
@@ -60,7 +61,10 @@ const Landing = () => {
                     </picture>
                 </a>
             </section>
-            <section className="contact-section py-5 d-flex flex-column align-items-center text-light" style={{ background: 'var(--primary-green)' }}>
+            <section className='testimonial-section'>
+                <Testimonials />
+            </section>
+            <section className="contact-section py-5 d-flex flex-column align-items-center bg-dark text-light mt-5">
                 <h1 className='display-5 fw-bold lh-1 text-center'>Schedule an Inspection</h1>
                 <div className='my-3'>
                     <p className='m-0'>Phone: <a href='tel:7073228350'>707-322-8350</a></p>
