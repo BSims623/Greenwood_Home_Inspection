@@ -3,14 +3,11 @@ import { servicesList } from '../utils/servicesList'
 import { Service, ScrollToTop } from '../components'
 import creiaLogoWebp from '../assets/images/creia-logo.webp'
 import creiaLogoJpg from '../assets/images/creia-logo.jpg'
+import creiaContract from '../assets/pdf/CreiaContractAndSOP10.2018.pdf'
 import { Link } from 'react-router-dom'
 
 const Services = () => {
 
-    // h2 {
-    //     color: var(--primary-green);
-    //     border-bottom: 5px solid;
-    // }
 
     return (
         <div className='container d-flex flex-column align-items-center'>
@@ -24,7 +21,7 @@ const Services = () => {
                 </a>
             </section>
             <div className="col-lg-8">
-                <p className='description'>I am a CREIA Certified Home Inspector working with both homeowners and real estate agents in Nevada, Placer and Sacramento counties. Every inspection is held to the standards of the CREIA contract, click <a href="src/assets/pdf/CreiaContractAndSOP10.2018.pdf">here</a> to view the full contract.</p>
+                <p className='description'>I am a CREIA Certified Home Inspector working with both homeowners and real estate agents in Nevada, Placer and Sacramento counties. Every inspection is held to the standards of the CREIA contract, click <a href={creiaContract}>here</a> to view the full contract.</p>
             </div>
             <div className="col-md-6 mt-5">
                 <h2 className='text-center fw-bold' style={{ color: 'var(--primary-green)', borderBottom: '5px solid' }}>What is Included in an Inspection?</h2>
