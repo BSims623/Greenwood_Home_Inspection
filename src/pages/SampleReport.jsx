@@ -5,7 +5,7 @@ const SampleReport = () => {
     return (
         <div className='d-flex flex-column align-items-center'>
             <h1 className='my-3 display-3 fw-bold'>Sample Report</h1>
-            <div style={{ maxWidth: '900px', width: '100%' }}>
+            <div style={{ maxWidth: '900px', width: '100%', height: '100%', overflow: 'auto', overflowX: 'hidden', WebkitOverflowScrolling: 'touch' }}>
                 <iframe src=
                     {sampleReport}
                     width="100%"
