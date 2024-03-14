@@ -26,6 +26,9 @@ const Navbar = () => {
                                 <a className={location === '/services' ? 'nav-link active' : 'nav-link'} href='/services'>Services</a>
                             </li>
                             <li className="nav-item">
+                                <a className={location === '/sample-report' ? 'nav-link active' : 'nav-link'} href='/sample-report'>Sample Report</a>
+                            </li>
+                            <li className="nav-item">
                                 <a className={location === '/contact' ? 'nav-link active' : 'nav-link'} href='/contact'>Contact</a>
                             </li>
                         </ul>

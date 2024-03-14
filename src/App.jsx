@@ -1,7 +1,7 @@
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // import 'bootstrap/dist/js/bootstrap.min.js';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import { HomeLayout, Landing, About, Services, Contact, Error } from './pages'
+import { HomeLayout, Landing, About, Services, SampleReport, Contact, Error } from './pages'
 
 const router = createBrowserRouter([
   {
@@ -20,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: 'services',
         element: <Services />,
+      },
+      {
+        path: 'sample-report',
+        element: <SampleReport />
       },
       {
         path: 'contact',
