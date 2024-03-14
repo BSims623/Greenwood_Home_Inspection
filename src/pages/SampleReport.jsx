@@ -3,15 +3,9 @@ import sampleReport from '../assets/pdf/SAMPLE 021623A.pdf'
 
 const SampleReport = () => {
     return (
-        <div className='d-flex flex-column align-items-center'>
-            <h1 className='my-3 display-3 fw-bold'>Sample Report</h1>
-            <div style={{ maxWidth: '900px', width: '100%', height: '100%', overflow: 'auto', overflowX: 'hidden', WebkitOverflowScrolling: 'touch' }}>
-                <iframe src=
-                    {sampleReport}
-                    width="100%"
-                    height="700">
-                </iframe>
-            </div>
+        <div>
+            <h1 className='my-3 display-3 fw-bold text-center'>Sample Report</h1>
+            <h2 className="text-center">Click <a href={sampleReport}>here</a> to view a sample report.</h2>
         </div>
     )
 }
