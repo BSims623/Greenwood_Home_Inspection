@@ -3,7 +3,7 @@ import { servicesList } from '../utils/servicesList'
 import { Service, ScrollToTop } from '../components'
 import creiaLogoWebp from '../assets/images/creia-logo.webp'
 import creiaLogoJpg from '../assets/images/creia-logo.jpg'
-import creiaContract from '../assets/pdf/CreiaContractAndSOP10.2018.pdf'
+import creiaContract from '../assets/pdf/CreiaContract.pdf'
 import { Link } from 'react-router-dom'
 
 const Services = () => {
