@@ -8,6 +8,9 @@ i {
 .icon-large {
     font-size: 3rem;
 }
+.icon-medium {
+    font-size: 1.5rem;
+}
 ul {
    list-style-position: outside;
 }

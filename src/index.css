@@ -22,6 +22,7 @@ body {
     background: var(--primary-green);
 }
 
-.about-section {
+.about-section,
+.certification-section {
     max-width: 970px;
 }

@@ -1,12 +1,16 @@
 import React from 'react'
 import profileImg from '../assets/images/profile-img.jpeg'
-import { ScrollToTop } from '../components'
+import { ScrollToTop, CertificationContainer, Service } from '../components'
+import { trainingAndEducation } from '../utils/trainingAndEducation'
+import { Link } from 'react-router-dom'
 
 const About = () => {
+    const reverseTrainingAndEducation = trainingAndEducation.slice().reverse();
+
     return (
-        <div className='container'>
+        <div className='py-5 d-flex flex-column align-items-center'>
             <ScrollToTop />
-            <section className="about-section py-5 mx-auto col-md-6">
+            <section className="container about-section mx-auto col-lg-6">
                 <img className='rounded mx-auto d-block' src={profileImg} alt="Profile picture of Marty Greenwood." width='200' />
                 <h1 className="text-center my-3">Martin Greenwood</h1>
                 <p className=''>I am Martin Greenwood; I am the owner of Greenwood Home Inspection.</p>
@@ -24,6 +28,18 @@ const About = () => {
                 <p>I have been a home inspector for the past 20 years, in the San Francisco Bay Area,
                     Nevada, Placer, and Sacramento counties.</p>
             </section>
+            <section className='col-lg-6 mx-auto mt-5'>
+                <CertificationContainer />
+            </section>
+            <section className='col-lg-6 mx-auto mt-5'>
+                <div>
+                    <h2 className='text-center fw-bold pb-4' style={{ color: 'var(--primary-green)', borderBottom: '5px solid' }}>Inspection Training and Education</h2>
+                    {reverseTrainingAndEducation.map((x, i) => {
+                        return <Service key={i} service={x.trainingEvent} included={x.topics} icon="icon-medium fa fa-solid fa-certificate" />
+                    })}
+                </div>
+            </section>
+            <Link className='btn btn-green text-light mt-4 mx-auto' to='/services'>Services</Link>
         </div>
     )
 }

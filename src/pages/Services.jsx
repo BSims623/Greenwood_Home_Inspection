@@ -26,7 +26,7 @@ const Services = () => {
             <div className="col-md-6 mt-5">
                 <h2 className='text-center fw-bold' style={{ color: 'var(--primary-green)', borderBottom: '5px solid' }}>What is Included in an Inspection?</h2>
                 {servicesList.map((x, i) => {
-                    return <Service key={i} service={x.service} included={x.included} />
+                    return <Service key={i} service={x.service} included={x.included} icon="fa-div icon-medium fa fa-check-square" />
                 })}
             </div>
             <Link className='btn btn-green text-light my-4' to='/contact'>Schedule Inspection</Link>
