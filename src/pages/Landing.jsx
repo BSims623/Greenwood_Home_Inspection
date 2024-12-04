@@ -1,10 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import mobileLandingImgWebp from '../assets/images/landing-3.webp?w=400'
+import mobileLandingImgJpg from '../assets/images/landing-img-new.jpg?w=400'
 import landingImgWebp from '../assets/images/landing-3.webp'
 import landingImgJpg from '../assets/images/landing-img-new.jpg'
 import creiaLogoWebp from '../assets/images/creia-logo.webp'
 import creiaLogoJpg from '../assets/images/creia-logo.jpg'
 import { Testimonials } from '../components'
+import { Helmet } from 'react-helmet'
 
 
 const Landing = () => {
@@ -12,13 +15,17 @@ const Landing = () => {
 
     return (
         <div>
-            <div className="img-container w-100">
-                <picture>
-                    <source srcSet={landingImgWebp} media="(width: 100%)" type="image/webp" />
-                    <source srcSet={landingImgJpg} media="(width: 100%)" type="image/jpg" />
-                    <img className='w-100' src={landingImgJpg} alt="Landing image of a new home." />
-                </picture>
-            </div>
+            <Helmet>
+                <link rel="preload" href={mobileLandingImgWebp} as="image" type="image/webp" />
+                <link rel="preload" href={mobileLandingImgJpg} as="image" type="image/jpeg" />
+            </Helmet>
+            <picture>
+                <source srcSet={mobileLandingImgWebp} media="(max-width: 599px)" type="image/webp" />
+                <source srcSet={mobileLandingImgJpg} media="(max-width: 599px)" type="image/jpg" />
+                <source srcSet={landingImgWebp} media="(min-width: 600px)" type="image/webp" />
+                <source srcSet={landingImgJpg} media="(min-width: 600px)" type="image/jpg" />
+                <img className='w-100 max-vh object-fit-cover' src={landingImgJpg} alt="Landing image of a new home." />
+            </picture>
             <section className="about-section container-lg py-5 d-flex flex-column align-items-center">
                 <h1 className='display-5 fw-bold lh-1'>Welcome To Greenwood Home Inspection</h1>
                 <p className='mt-3'>I am a home inspector, certified by the California Real Estate Inspection

@@ -26,3 +26,7 @@ body {
 .certification-section {
     max-width: 970px;
 }
+
+.max-vh {
+    max-height: 85vh;
+  }
