@@ -1,9 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import mobileLandingImgWebp from '../assets/images/landing-3.webp?w=400'
-import mobileLandingImgJpg from '../assets/images/landing-img-new.jpg?w=400'
+import mobileLandingImgWebp from '../assets/images/landing-3.webp?w=480'
+import mobileLandingImgJpg from '../assets/images/landing-img-new.jpg?w=480'
+import tabletLandingImgWebp from '../assets/images/landing-3.webp?w=1024'
+import tabletLandingImgJpg from '../assets/images/landing-img-new.jpg?w=1024'
 import landingImgWebp from '../assets/images/landing-3.webp'
-import landingImgJpg from '../assets/images/landing-img-new.jpg'
+import landingImgJpg from '../assets/images/landing-img-new.jpg?w=1200'
 import creiaLogoWebp from '../assets/images/creia-logo.webp'
 import creiaLogoJpg from '../assets/images/creia-logo.jpg'
 import { Testimonials } from '../components'
@@ -18,12 +20,16 @@ const Landing = () => {
             <Helmet>
                 <link rel="preload" href={mobileLandingImgWebp} as="image" type="image/webp" />
                 <link rel="preload" href={mobileLandingImgJpg} as="image" type="image/jpeg" />
+                <link rel="preload" href={landingImgWebp} as="image" type="image/webp" />
+                <link rel="preload" href={landingImgJpg} as="image" type="image/jpeg" />
             </Helmet>
             <picture>
-                <source srcSet={mobileLandingImgWebp} media="(max-width: 599px)" type="image/webp" />
-                <source srcSet={mobileLandingImgJpg} media="(max-width: 599px)" type="image/jpg" />
-                <source srcSet={landingImgWebp} media="(min-width: 600px)" type="image/webp" />
-                <source srcSet={landingImgJpg} media="(min-width: 600px)" type="image/jpg" />
+                <source srcSet={mobileLandingImgWebp} media="(max-width: 480px)" type="image/webp" />
+                <source srcSet={mobileLandingImgJpg} media="(max-width: 480px)" type="image/jpg" />
+                <source srcSet={tabletLandingImgWebp} media="(max-width: 1024px)" type="image/webp" />
+                <source srcSet={tabletLandingImgJpg} media="(max-width: 1024px)" type="image/jpg" />
+                <source srcSet={landingImgWebp} media="(min-width: 1025px)" type="image/webp" />
+                <source srcSet={landingImgJpg} media="(min-width: 1025px)" type="image/jpg" />
                 <img className='w-100 max-vh object-fit-cover' src={landingImgJpg} alt="Landing image of a new home." />
             </picture>
             <section className="about-section container-lg py-5 d-flex flex-column align-items-center">
